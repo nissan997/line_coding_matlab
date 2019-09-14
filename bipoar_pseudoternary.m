@@ -1,7 +1,7 @@
 a=round(rand(1,10));
 j=0;
 for i=1:10
-    if a(i)==0;
+    if a(i)==1
         b(i)=0;
     else
         j=j+1;
@@ -17,4 +17,4 @@ stairs(a,'LineWidth',2.5)
 title('Binary Signal')
 subplot(2,1,2)
 stairs(b,'LineWidth',2.5)
-title('Bipolar AMI')
+title('Bipolar Pseudoternary')
